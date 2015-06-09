@@ -1,0 +1,2 @@
+
+- save info on photos, tags and users
