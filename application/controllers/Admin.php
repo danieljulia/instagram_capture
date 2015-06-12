@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cron extends CI_Controller {
+class Admin extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,34 +19,13 @@ class Cron extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function __construct() {        
-    parent::__construct();
-}
+    	parent::__construct();
+	}
 
 
 	public function index()
 	{
 		
-		print "hello";
-
-	}
-
-	public function cron()
-	{
-
-  		$link = $this->input->get('url');
-  		if($link!=""){
-  			$link=urldecode($link);
-  		}
-		//print $link;
-		//exit();
-		//$this->load->model('Instagram_model','instagram');
-
-		//print_r($this->instagram);
-
-		$data=$this->instagram->get_tags_media_recent("badalona",$link);
-		
-
-		//print_r($data);
-		//$this->load->view('welcome_message');
+		$this->load->view('admin');
 	}
 }

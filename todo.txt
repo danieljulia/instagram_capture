@@ -1,2 +1,12 @@
 
-- save info on photos, tags and users
+todo
+----
+- show pictures when capturing
+- stop capturing if already finished
+- keep tags
+- interactive filter by tag, or geo position
+
+done
+----
+
++ save info on photos, tags and users
