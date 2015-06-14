@@ -19,6 +19,7 @@ class Instagram_model extends CI_Model {
        // var $next_url;
         //var $count=0;
 
+        var $count_users=0;
 
         public function __construct()
         {
@@ -38,19 +39,36 @@ class Instagram_model extends CI_Model {
           
             
               $count=0;
+            
+
+              $dat=array();
+
               foreach($data->data as $photo){
                 if(!$this->_photo_saved($photo)){
                   $count++;
-                  $this->_photo_save($photo);
+                  $d=$this->_photo_save($photo);
+
+                  $dat[]=array(
+                    'u'=>$photo->images->low_resolution->url,
+                    'l'=>$d['lat'],
+                    'g'=>$d['lng'],
+                    't'=>$d['created_time'],
+                    'i'=>$d['link']
+                    );
                 }
               }
 
-              $res=array('count'=>$count,'url'=>$next_url);
+              $res=array('count'=>$count,'count_users'=>$this->count_users,'url'=>$next_url,'data'=>$dat);
               print json_encode($res);
               
 
         }
 
+        function set_get_all(){
+          $query = $this->db->get('set');
+
+          return $query->result_array();
+        }
         function _photo_saved($photo){
            $query = $this->db->get_where('photo', array('pid' => $photo->id));
             if ($query->num_rows() > 0){
@@ -63,6 +81,7 @@ class Instagram_model extends CI_Model {
 
            if(!$this->_user_saved($photo->user)){
                   $this->_user_save($photo->user);
+                  $this->count_users++;
             }
 
            
@@ -96,7 +115,7 @@ class Instagram_model extends CI_Model {
           }
 
           $this->db->insert('photo', $data);
-
+          return $data;
         }
 
          function _user_saved($user){

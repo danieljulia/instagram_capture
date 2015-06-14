@@ -1,30 +1,46 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+<?php require "header.php";
+?>
 
-	<style type="text/css">
+<div class="container">
 
-	</style>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-</head>
-<body>
+<div class="row">
 
-<div id="container">
-	<h1>Instagram tool</h1>
+	<h1>Capturing info</h1>
 
-	<div id="body">
-		
 	<div id="info">
+	loading contents...
 	</div>
-
-	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>
+
+<div id="content" class="row">
+
+<div class="col-md-4">		
+	
+<div id="map" style="width: 100%; height: 400px"></div>
+</div>
+<div class="col-md-8">	
+	<div id="images">
+
+	</div>
+
+	</div>
+</div>	
+
+	
+
+</div> <!-- end container -->
+
+
+	<script>
+		var map = L.map('map').setView([41, 1], 8);
+
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+	
+	</script>
+
 
 <script>
 $(document).ready(function(){
@@ -37,10 +53,12 @@ var pags=0;
 var total=0;
 var next_url="";
 var count=0;
-var max=20;
+var max=2000;
+var markers;
+markers=new Array();
 
 function search(){
-
+	
 	var uri="<?php echo site_url()?>cron/cron";
 
 	if(next_url!=""){
@@ -49,18 +67,63 @@ function search(){
 	uri+="?url="+encodeURIComponent(next_url);
 
 	console.log("buscant a ",uri);
+	return;
 
 	$.getJSON(uri,function(data){
 		console.log(data);
 		total+=data.count;
 		next_url=data.url;
 		$('#info').html(total+" fotos");
+
+		html="";
+
+		for(var i=0;i<markers.length;i++){
+				map.removeLayer(markers[i]);
+		}
+		
+
+		markers=new Array();
+		$.each(data.data,function(i,itm){
+			html+="<img src='"+itm.u+"'>";
+			if(itm.l!=0){
+				var m=L.marker([itm.l, itm.g]).bindPopup("Hello world").addTo(map);
+				markers.push(m);
+			}
+		});
+
+
+		 var group = new L.featureGroup(markers);
+		 map.fitBounds(group.getBounds());
+
+		$('#images').html(html);
+
 		count++;
+		if(data.count==0){
+			console.log("finished");
+			$('#info').html("captura acabada");
+			return;
+
+		}
 		if(count<max){
 			search();
 		}
 	});
 }
+
+function timeConverter(UNIX_timestamp){
+  var a = new Date(UNIX_timestamp*1000);
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var year = a.getFullYear();
+  var month = months[a.getMonth()];
+  var date = a.getDate();
+  var hour = a.getHours();
+  var min = a.getMinutes();
+  var sec = a.getSeconds();
+  var time = date + ',' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+  return time;
+}
+
+
 </script>
 
 </body>

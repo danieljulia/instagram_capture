@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cron extends CI_Controller {
+class Sets extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,34 +19,39 @@ class Cron extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function __construct() {        
-    parent::__construct();
-}
+    	parent::__construct();
+	}
 
 
 	public function index()
 	{
 		
-		print "hello";
-
-	}
-
-	public function cron()
-	{
-
-  		$link = $this->input->get('url');
-  		if($link!=""){
-  			$link=urldecode($link);
-  		}
-		//print $link;
-		//exit();
-		//$this->load->model('Instagram_model','instagram');
-
-		//print_r($this->instagram);
-
-		$data=$this->instagram->get_tags_media_recent("platja",$link);
+		//show list
+		$res=$this->instagram->set_get_all();
 		
+		$this->load->view('sets_list',array("sets"=>$res));
 
-		//print_r($data);
-		//$this->load->view('welcome_message');
+
 	}
+
+	public function add()
+	{
+		if($this->input->post("name")!=""){
+			
+			print "ei.. capturant..".$this->input->post("name");
+			return;
+		}
+		$this->load->view('sets_add');
+		//show form 
+
+	}
+
+	public function view($id)
+	{
+		
+		print "viewing set ".$id;
+		//show form 
+
+	}
+
 }
