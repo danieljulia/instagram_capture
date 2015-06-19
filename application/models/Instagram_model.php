@@ -7,6 +7,8 @@ https://instagram.com/developer/endpoints/
 
 delete from photo where 1; delete from user where 1
 
+select username,photo_url,lat,lng,created_time where lat<>0
+
 */
 
 

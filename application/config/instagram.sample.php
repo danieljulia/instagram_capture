@@ -2,4 +2,5 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$config['INSTAGRAM_KEY']=''; //your instagram key
+$config['instagram_key']=''; //your instagram key
+$config['hashtag']='barcelona'; //change your hashtag

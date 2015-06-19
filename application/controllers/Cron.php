@@ -33,6 +33,7 @@ class Cron extends CI_Controller {
 	public function cron()
 	{
 
+
   		$link = $this->input->get('url');
   		if($link!=""){
   			$link=urldecode($link);
@@ -43,10 +44,9 @@ class Cron extends CI_Controller {
 
 		//print_r($this->instagram);
 
-		$data=$this->instagram->get_tags_media_recent("platja",$link);
+		$data=$this->instagram->get_tags_media_recent($this->config->item('hashtag'),$link);
 		
 
-		//print_r($data);
 		//$this->load->view('welcome_message');
 	}
 }

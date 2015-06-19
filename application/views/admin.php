@@ -67,7 +67,7 @@ function search(){
 	uri+="?url="+encodeURIComponent(next_url);
 
 	console.log("buscant a ",uri);
-	return;
+	
 
 	$.getJSON(uri,function(data){
 		console.log(data);
