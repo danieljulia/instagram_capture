@@ -29,29 +29,56 @@ class Sets extends CI_Controller {
 		//show list
 		$res=$this->instagram->set_get_all();
 		
-		$this->load->view('sets_list',array("sets"=>$res));
+		$this->load->view('sets/list',array("sets"=>$res));
 
 
 	}
 
 	public function add()
 	{
+
+		$options=array();
+
 		if($this->input->post("name")!=""){
 			
-			print "ei.. capturant..".$this->input->post("name");
-			return;
+			$this->instagram->set_add(
+				
+				$this->input->post("name"),
+				$this->input->post("tag"),
+				$this->input->post("lat"),
+				$this->input->post("lng"),
+				$this->input->post("distance")
+				
+				);
+			
+				$options['name']=$this->input->post("name");
+
 		}
-		$this->load->view('sets_add');
+		$this->load->view('sets/add',$options);
 		//show form 
 
 	}
 
 	public function view($id)
 	{
-		
-		print "viewing set ".$id;
+		$options=array(
+			'id'=>$id);
+
+		$this->load->view('sets/view',$options);
 		//show form 
 
 	}
+
+	public function parse($id)
+	{
+		$options=array(
+			'set'=>$this->instagram->set_get($id)
+			);
+
+		$this->load->view('sets/parse',$options);
+		//show form 
+
+	}
+
 
 }

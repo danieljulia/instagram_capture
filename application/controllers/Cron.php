@@ -30,7 +30,7 @@ class Cron extends CI_Controller {
 
 	}
 
-	public function cron()
+	public function parse($id)
 	{
 
 
@@ -38,13 +38,19 @@ class Cron extends CI_Controller {
   		if($link!=""){
   			$link=urldecode($link);
   		}
+
+  		$set=$this->instagram->set_get($id);
+
+
+  		//todo geo, 
+
 		//print $link;
 		//exit();
 		//$this->load->model('Instagram_model','instagram');
 
 		//print_r($this->instagram);
 
-		$data=$this->instagram->get_tags_media_recent($this->config->item('hashtag'),$link);
+		$data=$this->instagram->get_tags_media_recent($id,$set->tag,$link);
 		
 
 		//$this->load->view('welcome_message');
