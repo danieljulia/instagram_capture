@@ -61,8 +61,14 @@ class Sets extends CI_Controller {
 
 	public function view($id)
 	{
+		$set=$this->instagram->set_get($id);
+
 		$options=array(
-			'id'=>$id);
+			'id'=>$id,
+			'set'=>$set,
+			'photos'=>$this->instagram->set_get_photos($id));
+
+		
 
 		$this->load->view('sets/view',$options);
 		//show form 

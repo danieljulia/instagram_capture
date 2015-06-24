@@ -7,7 +7,7 @@ $this->load->view('header');
 
 <div class="row">
 
-	<h1>Capturing info <?php print $set->name?></h1>
+	<h1>Capturing info for set '<?php print $set->name?>'</h1>
 
 	<div id="info">
 	loading contents...

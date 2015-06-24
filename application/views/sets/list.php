@@ -12,7 +12,7 @@ $this->load->view('header');
 </div>
 
 <div id="content" class="row">
-<h2><a href='<?php print site_url('sets/add')?>'>Create set</a></h2>
+<h2><a class="btn btn-lg btn-primary" href='<?php print site_url('sets/add')?>'>Create set</a></h2>
 <ul class="sets">
 <?php
 

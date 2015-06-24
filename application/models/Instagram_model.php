@@ -103,6 +103,15 @@ class Instagram_model extends CI_Model {
           return $query->row();
         }
 
+        function set_get_photos($id){
+           $query = $this->db->get_where('photo', array(
+            'set_id'=> $id
+            ));
+           $this->db->order_by("id", "desc");
+           return $query->result_array();
+
+        }
+
 
         function _photo_saved($photo,$id){
            $query = $this->db->get_where('photo', array(
