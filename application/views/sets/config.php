@@ -66,15 +66,8 @@ echo form_open('email/send', '', $hidden);
 </div>
 <div class="col-md-4">
 <h2>Current hashtags</h2>
-<ul class="list-group">
-  <li class="list-group-item">
-    <span class="badge">14</span>
-    #craftbeer <a href=''>remove</a>
-  </li>
-   <li class="list-group-item">
-   
-    #cerveza <a href=''>remove</a>
-  </li>
+<ul class="list-group" id="current-tags">
+
 </ul>
 
 </div>
@@ -84,12 +77,66 @@ echo form_open('email/send', '', $hidden);
 
 
 <script>
+
 var tags=new Array();
+
+$(document).ready(function(){
+  tag_current();
+
+});
+
 $('#search').on("click",function(e){
   var tag=$('#hashtag').val();
   search(tag);
 
 });
+
+function get(){
+
+}
+
+function tag_add(tag){
+  var uri='<?php print site_url("ajax/set_tag_add/".$id)?>/'+tag;
+
+ $.getJSON(uri,function(data){
+    refresh_tags(data);
+ });
+
+}
+
+function tag_remove(tag){
+  var uri='<?php print site_url("ajax/set_tag_remove/".$id)?>/'+tag;
+ 
+ $.getJSON(uri,function(data){
+    refresh_tags(data);
+ });
+}
+
+function tag_current(){
+  
+  var uri='<?php print site_url("ajax/set_tag_get/".$id)?>';
+
+ $.getJSON(uri,function(data){
+    refresh_tags(data);
+ });
+}
+
+function refresh_tags(data){
+  var html="";
+  $.each(data,function(i,itm){
+      html+='<li class="list-group-item tag" data-tag='+itm.tag+'> #'+itm.tag+' <a href="#" class="remove" >remove</a></li>';
+  });
+  $('#current-tags').html(html);
+
+   $('li.tag .remove').on('click',function(e){
+        var tag=$(this).parent().data('tag');
+        tag_remove(tag);
+        e.preventDefault();
+
+      });
+
+
+}
 
 function search(tag){
      tags=new Array();
@@ -114,16 +161,24 @@ function search(tag){
         if(a.value<b.value) return 1;
         return -1;
       });
-      console.log(tags);
+   
 
       var html="";
       $.each(tags,function(i,tag){
         if(tag.value>2){ 
-          html+='<li class="list-group-item"><span class="badge">'+tag.value+'</span> #'+tag.name+' <a href="">remove</a></li>';
+          html+='<li class="list-group-item tag" data-tag='+tag.name+'><span class="badge">'+tag.value+'</span> #'+tag.name+' <a href="#" class="add" >add</a></li>';
       }
       });
 
+      
+
       $('#results').html(html);
+      $('li.tag .add').on('click',function(e){
+        var tag=$(this).parent().data('tag');
+        tag_add(tag);
+        e.preventDefault();
+
+      });
 
 
     });

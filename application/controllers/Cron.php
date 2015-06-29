@@ -30,7 +30,38 @@ class Cron extends CI_Controller {
 
 	}
 
-	public function parse($id)
+	public function parse()
+	{
+		$res=$this->Backoffice_model->get_status();
+		if($res->status=="busy"){
+			//wait until next call
+			print "busy";
+			return;
+
+		}
+		$res=$this->Backoffice_model->get_current_set_and_tag();
+		$this->set_status("busy",$res->set_id,$res->tag);
+
+		$this->parse_tag($res->set_id,$res->tag);
+
+
+	}
+
+	public function parse_tag($set_id,$tag){
+		$c=0;
+		$next=$this->instagram_model->get_tags_media_recent_ex($set_id,$tag);
+
+		while( $next!=''){
+
+			$next=$this->instagram_model->get_tags_media_recent_ex($set_id,$tag,$next);
+			print "parsing...";
+			$c++;
+			if($c>200) break; //just in case
+		}
+		$this->Backoffice_model->set_status('free');
+	}
+
+	public function __parse($id)
 	{
 
 

@@ -80,6 +80,69 @@ class Instagram_model extends CI_Model {
 
         }
 
+        public function get_tags_media_recent_ex($id,$tag="",$url="")
+        {
+              if($tag=="") return;
+              $uri="https://api.instagram.com/v1/tags/".$tag."/media/recent?count=33&client_id=".$this->config->item('apiKey');
+              if($url!="") $uri=$url;
+              $res=file_get_contents($uri);
+              $headers=$http_response_header;
+
+              //todo extract and save limit
+              /*
+                X-Ratelimit-Remaining: the remaining number of calls available to your app within the 1-hour window
+
+              X-Ratelimit-Limit: the total number of calls allowed within the 1-hour window
+              */
+
+            
+
+              $data = json_decode( $res ); // stdClass object
+
+
+             $next_url=$data->pagination->next_url;
+          
+            
+              $count=0;
+            
+
+         
+
+              foreach($data->data as $photo){
+                if(!$this->_photo_saved($photo,$id)){
+                  $count++;
+                  $this->_photo_save($photo,$id);
+
+                 
+                }
+              }
+
+              if ($count==0){
+                return '';
+              }
+
+              //if date last photo is older than the window
+              $last=$data->data[count($data->data)-1];
+              $created_time=0;
+
+                if(isset($last->caption->created_time)){
+              $created_time=$last->caption->created_time;
+            }
+            if($created_time!=0){
+              if( (time()-$created_time) >60*60*24*7) {
+                return '';
+              }
+            }
+
+             // $res=array('count'=>$count,'count_users'=>$this->count_users,'url'=>$next_url,'data'=>$dat,
+              //  'headers'=>$headers);
+             // print json_encode($res);
+              
+              return $next_url;
+
+        }
+
+
         function set_get_all(){
           $query = $this->db->get('set');
 

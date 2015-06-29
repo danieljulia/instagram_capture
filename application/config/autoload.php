@@ -137,6 +137,9 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('Instagram_model'=>'instagram_model');
+$autoload['model'] = array(
+	'Instagram_model'=>'instagram_model',
+	'Backoffice_model'
+	);
 
 //$autoload['model'] = array();
