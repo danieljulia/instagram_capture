@@ -60,7 +60,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('database');
+$autoload['libraries'] = array('database','Instagram');
 
 
 /*
@@ -137,6 +137,6 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('Instagram_model'=>'instagram');
+$autoload['model'] = array('Instagram_model'=>'instagram_model');
 
 //$autoload['model'] = array();

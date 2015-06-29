@@ -1,10 +1,22 @@
+v 0.2
+----
+- use php library
+- bootstrap menu
+- hashtag selector and database tag_2_set
+- capture in background
+- dashboard 
+
+
+
+v. 0.1
+----
 
 todo
 ----
-- show pictures when capturing
-- stop capturing if already finished
-- keep tags
-- interactive filter by tag, or geo position
++ show pictures when capturing
++ stop capturing if already finished
++ keep tags
++ interactive filter by tag, or geo position
 
 done
 ----

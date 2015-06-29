@@ -41,20 +41,33 @@ class Sets extends CI_Controller {
 
 		if($this->input->post("name")!=""){
 			
-			$this->instagram->set_add(
-				
-				$this->input->post("name"),
-				$this->input->post("tag"),
-				$this->input->post("lat"),
-				$this->input->post("lng"),
-				$this->input->post("distance")
-				
-				);
+			$id=$this->instagram->set_add(
+				$this->input->post("name")
+			);
+			 redirect('/sets/config/'.$id, 'refresh');
+				   return;
+
 			
-				$options['name']=$this->input->post("name");
+				
 
 		}
 		$this->load->view('sets/add',$options);
+		//show form 
+
+	}
+
+	public function config($id)
+	{
+		$set=$this->instagram_model->set_get($id);
+
+		$options=array(
+			'id'=>$id,
+			'set'=>$set,
+			'photos'=>$this->instagram_model->set_get_photos($id));
+
+	
+
+		$this->load->view('sets/config',$options);
 		//show form 
 
 	}
@@ -75,6 +88,8 @@ class Sets extends CI_Controller {
 
 	}
 
+
+
 	public function parse($id)
 	{
 		$options=array(
@@ -82,6 +97,20 @@ class Sets extends CI_Controller {
 			);
 
 		$this->load->view('sets/parse',$options);
+		//show form 
+
+	}
+
+		public function export($id)
+	{
+
+		$set=$this->instagram->set_get($id);
+		$options=array(
+			'id'=>$id,
+			'set'=>$set,
+			'photos'=>$this->instagram->set_get_photos($id));
+
+		$this->load->view('sets/export',$options);
 		//show form 
 
 	}

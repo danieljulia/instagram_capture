@@ -2,7 +2,7 @@
 $this->load->view('header');
 ?>
 
-<div class="container">
+
 
 <div class="row">
 
@@ -25,9 +25,6 @@ $this->load->view('header');
 
 	
 
-</div> <!-- end container -->
-
-
-
-</body>
-</html>
+<?php 
+$this->load->view('footer');
+?>

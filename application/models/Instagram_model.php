@@ -86,17 +86,54 @@ class Instagram_model extends CI_Model {
           return $query->result_array();
         }
 
-        function set_add($name,$tag,$lat,$lng,$distance){
+        function set_add($name){ //$tag,$lat,$lng,$distance
           $data=array(
              'name' => $name,
-              'tag' => $tag,
+              /*'tag' => $tag,
                 'lat' => $lat,
                 'lng' => $lng,
-                'distance' => $distance,
+                'distance' => $distance,*/
           );
 
           $this->db->insert('set', $data);
+          return  $this->db->insert_id();
         }
+
+        function set_tag_add($id,$tag){
+
+          //if not exists do nothing
+          if($this->set_tag_exists($id,$tag)){
+           return $this->set_tag_get($id);
+          }
+          $data=array(
+             'set_id' => $id,
+             'tag' => $tag,
+          );
+
+          $this->db->insert('set_2_tag', $data);
+          //eturn  $this->db->insert_id();
+           return $this->set_tag_get($id);
+
+        } 
+         function set_tag_exists($id,$tag){
+          $query = $this->db->get_where('set_2_tag', array('set_id' => $id,'tag'=>$tag));
+          $res=$query->row();
+          if(isset($res->id)) return true;
+          return false;
+        }
+
+        function set_tag_get($id){
+          $query = $this->db->get_where('set_2_tag', array('set_id' => $id));
+          return $query->result_array();
+        }
+
+        function set_tag_remove($id,$tag){
+
+          $this->db->delete('set_2_tag', array('set_id' => $id,'tag'=>$tag));
+
+          return $this->set_tag_get($id);
+        }
+
 
         function set_get($id){
           $query = $this->db->get_where('set', array('id' => $id));
