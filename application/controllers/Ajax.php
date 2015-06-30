@@ -76,4 +76,8 @@ class Ajax extends CI_Controller {
 		print json_encode($res);
 	}
 
+	public function dash(){
+		$res=$this->Backoffice_model->get_status();
+		print json_encode($res);
+	}
 }

@@ -129,7 +129,7 @@ class Instagram_model extends CI_Model {
               $created_time=$last->caption->created_time;
             }
             if($created_time!=0){
-              if( (time()-$created_time) >60*60*24*7) {
+              if( (time()-$created_time) > 60*60*$this->config->item('instagram_max_hours_back') ) {
                 return '';
               }
             }
@@ -161,6 +161,19 @@ class Instagram_model extends CI_Model {
           $this->db->insert('set', $data);
           return  $this->db->insert_id();
         }
+
+        function set_updated($set_id,$tag){
+            $data = array(
+                'updated' => date('Y-m-d H:i:s'),
+              
+            );
+         
+            $this->db->where('set_id', $set_id);
+             $this->db->where('tag', $tag);
+            $res=$this->db->update('set_2_tag', $data); 
+           
+        }
+
 
         function set_tag_add($id,$tag){
 

@@ -40,7 +40,8 @@ class Cron extends CI_Controller {
 
 		}
 		$res=$this->Backoffice_model->get_current_set_and_tag();
-		$this->set_status("busy",$res->set_id,$res->tag);
+		
+		$this->Backoffice_model->set_status("busy",$res->set_id,$res->tag);
 
 		$this->parse_tag($res->set_id,$res->tag);
 
@@ -56,8 +57,12 @@ class Cron extends CI_Controller {
 			$next=$this->instagram_model->get_tags_media_recent_ex($set_id,$tag,$next);
 			print "parsing...";
 			$c++;
-			if($c>200) break; //just in case
+			if($c>$this->config->item('instagram_max_calls')){
+				$next=''; //quit
+			}
 		}
+		$this->instagram_model->set_updated($set_id,$tag);
+
 		$this->Backoffice_model->set_status('free');
 	}
 
@@ -85,5 +90,9 @@ class Cron extends CI_Controller {
 		
 
 		//$this->load->view('welcome_message');
+	}
+
+	public function test(){
+		$this->instagram_model->set_updated(10,'parrot');
 	}
 }

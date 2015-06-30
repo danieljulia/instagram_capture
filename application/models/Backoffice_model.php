@@ -52,8 +52,9 @@ class Backoffice_model extends CI_Model {
                 $set_id=$this->get_current_set();
 
               //get only set with active = 1
+                $this->db->order_by('updated','asc');
                 $query = $this->db->get_where('set_2_tag', array('set_id' => $set_id));
-                $this->db->order_by('updated','desc');
+                
                $res=$query->row();  
                return $res;
 
