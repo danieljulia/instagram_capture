@@ -78,6 +78,9 @@ class Ajax extends CI_Controller {
 
 	public function dash(){
 		$res=$this->Backoffice_model->get_status();
+		
+		$res->photos=$this->instagram_model->get_last_photos(10);
+	
 		print json_encode($res);
 	}
 }

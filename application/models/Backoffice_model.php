@@ -40,9 +40,15 @@ class Backoffice_model extends CI_Model {
             
                 //$query = $this->db->get_where('status', array('set_id' => $id));
                 $this->db->order_by('updated','desc');
-                    $query = $this->db->get('status');
-                return $query->row();  
+                $query = $this->db->get('status');
 
+                $res= $query->row();  
+                if(!isset($res)){
+                    $this->set_status('free',0,'');
+                    return get_status();
+                }
+                return $res;
+                
         }
 
         public function get_current_set_and_tag()

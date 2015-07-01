@@ -13,13 +13,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <style type="text/css">
 	#content img{
 		width:100px;
 		float:left;
 	}
+
+  img.thumb{
+    float:left;
+  }
 	</style>
 
 </head>
@@ -42,7 +46,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="<?php print site_url("")?>">Config</a></li>
-              <li><a href="<?php print site_url("dashboard")?>">Dash</a></li>
+              <li><a href="<?php print site_url("admin/dash")?>">Dash</a></li>
+              <li><a href="<?php print site_url("admin/users")?>">Users</a></li>
               <li><a href="#">Contact</a></li>
 
               <!--

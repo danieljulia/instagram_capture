@@ -5,7 +5,7 @@ v 0.2
 - hashtag selector and database tag_2_set
 - capture in background
 - dashboard 
-
+- capture after hivernation time (f.i 15min)
 
 
 v. 0.1

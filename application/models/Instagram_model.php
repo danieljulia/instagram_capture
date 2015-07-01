@@ -111,10 +111,37 @@ class Instagram_model extends CI_Model {
               foreach($data->data as $photo){
                 if(!$this->_photo_saved($photo,$id)){
                   $count++;
-                  $this->_photo_save($photo,$id);
-
-                 
+                  $this->_photo_save($photo,$id); 
                 }
+                print_r($photo);
+                //for each comment
+                //todo get all comments, calling api
+                //now only the last ones
+                foreach($photo->comments->data as $comment){
+                  if(!$this->_user_saved($id,$comment->from)){
+                    $this->_user_save($id,$comment->from);
+
+                  }else{
+                   
+                  }
+                   $this->_user_increment($id,$comment->from->username,'comments');
+
+                }
+
+                //for each like
+                //todo get all likes calling api again
+                foreach($photo->likes->data as $like){
+                  if(!$this->_user_saved($id,$like)){
+                    $this->_user_save($id,$like);
+
+                  }else{
+                   
+                  }
+                   $this->_user_increment($id,$like->username,'likes');
+
+                }
+
+
               }
 
               if ($count==0){
@@ -225,12 +252,22 @@ class Instagram_model extends CI_Model {
 
         }
 
+         function get_last_photos($num){
+          $this->db->limit($num);
+           $this->db->order_by("id", "desc");
+           $query = $this->db->get('photo');
+           
+           return $query->result_array();
+
+        }
+
+
+
 
         function _photo_saved($photo,$id){
-           $query = $this->db->get_where('photo', array(
-            'pid' => $photo->id,
-            'set_id'=> $id
-            ));
+            $this->db->where('pid', $photo->id);
+            $this->db->where('set_id', $id);
+           $query = $this->db->get('photo');
             if ($query->num_rows() > 0){
               return true;
             }
@@ -239,9 +276,11 @@ class Instagram_model extends CI_Model {
 
         function _photo_save($photo,$id){
 
-           if(!$this->_user_saved($photo->user)){
-                  $this->_user_save($photo->user);
+           if(!$this->_user_saved($id,$photo->user)){
+                  $this->_user_save($id,$photo->user,1);
                   $this->count_users++;
+            }else{
+              $this->_user_increment($id,$photo->user->username,'photos');
             }
 
            
@@ -279,27 +318,51 @@ class Instagram_model extends CI_Model {
           return $data;
         }
 
-         function _user_saved($user){
-            $query = $this->db->get_where('user', array('username' => $user->username));
+         function _user_saved($set_id,$user){
+            $query = $this->db->get_where('user', 
+              array(
+                'username' => $user->username,
+                'set_id' => $set_id
+                ));
             if ($query->num_rows() > 0){
               return true;
             }
             return false;
         }
 
-         function _user_save($user){
+         function _user_save($set_id,$user,$photos=0){
             //ask for more information about the user
+          
+          $full_name="";
+          if( isset($user->full_name)){
+            $full_name=$user->full_name;
 
+          }
           $data = array(
+                 'set_id'=>$set_id,
                   'username' => $user->username,
                   'profile_picture' =>  $user->profile_picture,
                   'user_id' =>  $user->id,
-                  'full_name' =>  $user->full_name,
+                  'full_name' =>  $full_name,
+                  'photos'=>$photos
           );
 
           $this->db->insert('user', $data);
 
         }
+
+         function _user_increment($set_id,$username,$field){
+            $this->db->where('username', $username);
+             $this->db->where('set_id', $set_id);
+            $this->db->set($field, $field.'+1', FALSE);
+            $this->db->update('user');
+         }
+
+
+         function test(){
+            $this->get_tags_media_recent_ex(10,"parrot");
+
+         }
    
 
 }
