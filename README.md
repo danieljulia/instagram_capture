@@ -17,6 +17,6 @@ Open the browser and create a set
 
 Then to begin parse in the command line
 
-index.php cron parse <id>   
+index.php cron parse id   
 
 where id is the set id
