@@ -30,16 +30,29 @@ class Cron extends CI_Controller {
 
 	}
 
-	public function parse()
+	public function parse($set_id=0)
 	{
 
-		print "parsing..\n";
+		print "trying to parse..\n";
 
 		if($this->config->item('disabled')){
 			print "disabled";
 			return;
 		}
 
+		if($set_id==0){
+			print "no set_id";
+			return;
+		}
+
+		$tags=$this->Backoffice_model->tags_get($set_id);
+		
+		foreach($tags as $tag){
+			print "parsing ".$tag."..\n";
+			$this->Backoffice_model->set_status("busy",$set_id,$tag);
+			$this->parse_tag($set_id,$tag);
+		}
+		/*
 		//todo if very recent don't reparse
 		$intents=$this->config->item('cron_intents');
 		for($i=0;$i<$intents;$i++){ 
@@ -58,6 +71,8 @@ class Cron extends CI_Controller {
 			$this->parse_tag($res->set_id,$res->tag);
 
 		}
+		*/
+
 
 
 	}

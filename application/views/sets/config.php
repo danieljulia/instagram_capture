@@ -19,7 +19,7 @@ $this->load->view('header');
 
 
 //http://www.codeigniter.com/userguide3/helpers/form_helper.html
-echo form_open('sets/add',array('class' => 'myform', 'role' => 'form'));
+//echo form_open('sets/add',array('class' => 'myform', 'role' => 'form'));
 
 
 /*
