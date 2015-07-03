@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Sets extends CI_Controller {
+class Export extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -26,91 +26,69 @@ class Sets extends CI_Controller {
 	public function index()
 	{
 		
-		//show list
-		$res=$this->instagram_model->set_get_all();
 		
-		$this->load->view('sets/list',array("sets"=>$res));
-
 
 	}
-
-	public function add()
-	{
-
-		$options=array();
-
-		if($this->input->post("name")!=""){
-			
-			$id=$this->instagram_model->set_add(
-				$this->input->post("name")
-			);
-			 redirect('/sets/config/'.$id, 'refresh');
-				   return;
-
-			
-				
-
-		}
-		$this->load->view('sets/add',$options);
-		//show form 
-
-	}
-
-	public function config($id)
-	{
-		$set=$this->instagram_model->set_get($id);
-
-		$options=array(
-			'id'=>$id,
-			'set'=>$set,
-			'photos'=>$this->instagram_model->set_get_photos($id));
 
 	
 
-		$this->load->view('sets/config',$options);
-		//show form 
-
-	}
-
-	public function view($id)
+	public function photos($id)
 	{
-		$set=$this->instagram_model->set_get($id);
 
+		$set=$this->instagram_model->set_get($id);
 		$options=array(
 			'id'=>$id,
 			'set'=>$set,
 			'photos'=>$this->instagram_model->set_get_photos($id));
 
-		
+		$this->load->view('export/photos',$options);
+		//show form 
 
-		$this->load->view('sets/view',$options);
+	}
+
+		public function photos_geo($id)
+	{
+
+		$set=$this->instagram_model->set_get($id);
+		$options=array(
+			'id'=>$id,
+			'set'=>$set,
+			'photos'=>$this->instagram_model->set_get_photos($id));
+
+		$this->load->view('export/photos_geo',$options);
 		//show form 
 
 	}
 
 
-
-	public function parse($id)
+		public function users($id)
 	{
+		$set=$this->instagram_model->set_get($id);
 		$options=array(
-			'set'=>$this->instagram_model->set_get($id)
+			'id'=>$id,
+			'set'=>$set,
+			'users'=>$this->instagram_model->users_get($id),
+			
 			);
 
-		$this->load->view('sets/parse',$options);
-		//show form 
+		$this->load->view('export/users',$options);
+		
 
 	}
 
-		public function export($id)
+
+		public function graph($id)
 	{
 
 		$set=$this->instagram_model->set_get($id);
 		$options=array(
 			'id'=>$id,
 			'set'=>$set,
-			'photos'=>$this->instagram_model->set_get_photos($id));
+			'users'=>$this->instagram_model->users_get($id),
+			'user_2_user'=>$this->instagram_model->user_2_user_get($id),
+			);
 
-		$this->load->view('sets/export',$options);
+		$this->load->view('export/graph',$options);
 		//show form 
 
 	}

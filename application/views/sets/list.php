@@ -12,12 +12,12 @@ $this->load->view('header');
 </div>
 
 <div id="content" class="row">
-<h2><a class="btn btn-lg btn-primary" href='<?php print site_url('sets/add')?>'>Create set</a></h2>
-<ul class="sets">
+<h2><a class="btn btn-md btn-primary" href='<?php print site_url('sets/add')?>'>Create set</a></h2>
+<ul class="sets nav nav-pills nav-stacked">
 <?php
 
  foreach($sets as $set): ?>
-<li><a href="<?php print site_url("sets/view/".$set['id'])?>"><?php print $set['name']?></a></li>
+<li role="presentation"><a href="<?php print site_url("sets/config/".$set['id'])?>"><?php print $set['name']?></a></li>
 <?php endforeach; ?>
 </ul>
 

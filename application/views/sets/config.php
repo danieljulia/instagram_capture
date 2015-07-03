@@ -45,14 +45,7 @@ echo form_open('email/send', '', $hidden);
 <?php echo form_close();?>
 
 <ul class="list-group">
-  <li class="list-group-item">
-  
-    #craftbeer <a href=''>add</a>
-  </li>
-   <li class="list-group-item">
-    <span class="badge">11</span>
-    #cerveza <a href=''>delete</a>
-  </li>
+
 </ul>
 
 

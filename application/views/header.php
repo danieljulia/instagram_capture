@@ -8,6 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  <title>Instagram capturing tool</title>
 
 
+
+
+
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css">
 
@@ -16,6 +20,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 <style type="text/css">
+body
+{
+  font-family: Arial;
+  font-size: 14px;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+a:hover
+{
+  text-decoration: underline;
+}
 	#content img{
 		width:100px;
 		float:left;
@@ -25,6 +43,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     float:left;
   }
 	</style>
+
+<?php 
+if(isset($output->css_files )):
+foreach($output->css_files as $file): ?>
+  <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+<?php endforeach; endif; ?>
+<?php
+if(isset($output->js_files )):
+ foreach($output->js_files as $file): ?>
+  <script src="<?php echo $file; ?>"></script>
+<?php endforeach; endif; ?>
 
 </head>
 <body>
@@ -45,10 +74,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="<?php print site_url("")?>">Config</a></li>
-              <li><a href="<?php print site_url("admin/dash")?>">Dash</a></li>
-              <li><a href="<?php print site_url("admin/users")?>">Users</a></li>
-              <li><a href="#">Contact</a></li>
+            <?php 
+              function is_active($mine){
+                if(uri_string()==$mine) print "class='active' ";
+              }
+             ?>
+              <li <?php is_active('sets')?> ><a href="<?php print site_url("sets")?>">Config</a></li>
+              <li <?php is_active('admin/dash')?> ><a href="<?php print site_url("admin/dash")?>">Dash</a></li>
+              <li <?php is_active('admin/users')?> ><a href="<?php print site_url("admin/users")?>">Users</a></li>
+              <li <?php is_active('admin/timeline')?> ><a href="<?php print site_url("admin/timeline")?>">Timeline</a></li>
+              <li <?php is_active('admin/map')?> ><a href="<?php print site_url("admin/map")?>">Map</a></li>
+               <li <?php is_active('admin/export')?> ><a href="<?php print site_url("admin/export")?>">Export</a></li>
 
               <!--
               <li class="dropdown">

@@ -113,7 +113,7 @@ class Instagram_model extends CI_Model {
                   $count++;
                   $this->_photo_save($photo,$id); 
                 }
-                print_r($photo);
+               // print_r($photo);
                 //for each comment
                 //todo get all comments, calling api
                 //now only the last ones
@@ -125,6 +125,11 @@ class Instagram_model extends CI_Model {
                    
                   }
                    $this->_user_increment($id,$comment->from->username,'comments');
+                   //graph
+                   if($comment->from->username!= $photo->user->username){ 
+                   $this->_user_2_user_update(
+                    $id,$comment->from->username,$photo->user->username,1);
+                 }
 
                 }
 
@@ -138,28 +143,36 @@ class Instagram_model extends CI_Model {
                    
                   }
                    $this->_user_increment($id,$like->username,'likes');
-
+                   //graph
+                    if($like->username!= $photo->user->username){ 
+                   $this->_user_2_user_update(
+                    $id,$like->username,$photo->user->username,0,1);
+                 }
                 }
 
 
               }
 
+
               if ($count==0){
+                print 'I already have this photos...';
                 return '';
               }
 
               //if date last photo is older than the window
               $last=$data->data[count($data->data)-1];
-              $created_time=0;
+            
+              $created_time=$last->created_time;
+            
+              print "set id: ".$id." tag: ".$tag." parsed ".$count." photos, ".$this->count_users." users\n";
 
-                if(isset($last->caption->created_time)){
-              $created_time=$last->caption->created_time;
-            }
-            if($created_time!=0){
-              if( (time()-$created_time) > 60*60*$this->config->item('instagram_max_hours_back') ) {
+
+        //https://api.instagram.com/v1/tags/barcelona/media/recent?count=33&client_id=128d96b790704f5db73b5a3dc706831a
+              if( (time()-$last->created_time) > 60*60*$this->config->item('instagram_max_hours_back') ) {
+                print "max hours back!\n";
                 return '';
               }
-            }
+            
 
              // $res=array('count'=>$count,'count_users'=>$this->count_users,'url'=>$next_url,'data'=>$dat,
               //  'headers'=>$headers);
@@ -252,6 +265,34 @@ class Instagram_model extends CI_Model {
 
         }
 
+
+        function users_get($id,$limit=0){
+            $this->db->order_by("username", "desc");
+            if($limit!=0) $this->db->limit($limit);
+
+           $query = $this->db->get_where(
+            'user', array(
+            'set_id'=> $id
+            ));
+         
+           return $query->result_array();
+        }
+
+
+
+       function user_2_user_get($id,$limit=0){
+        $this->db->order_by("from", "desc");
+        if($limit!=0) $this->db->limit($limit);
+
+           $query = $this->db->get_where(
+            'user_2_user', array(
+            'set_id'=> $id
+            ));
+           
+           return $query->result_array();
+        }
+
+
          function get_last_photos($num){
           $this->db->limit($num);
            $this->db->order_by("id", "desc");
@@ -317,6 +358,46 @@ class Instagram_model extends CI_Model {
           $this->db->insert('photo', $data);
           return $data;
         }
+
+        function _user_2_user_update($set_id,$from,$to,$comments=0,$likes=0){
+          if(!$this->_user_2_user_exist($set_id,$from,$to)){
+            $this->_user_2_user_create($set_id,$from,$to);
+          }
+            $this->db->where('set_id', $set_id);
+            $this->db->where('from', $from);
+             $this->db->where('to', $to);
+             if($comments!=0)
+                $this->db->set('comments', 'comments+1', FALSE);
+                 if($likes!=0)
+                $this->db->set('likes', 'likes+1', FALSE);
+            $this->db->update('user_2_user');
+        }
+
+        function _user_2_user_exist($set_id,$from,$to){
+             $query = $this->db->get_where('user_2_user', 
+              array(
+                'set_id' => $set_id,
+                'from'=>$from,
+                'to'=>$to,
+                ));
+            $res=$query->row();
+            if(isset($res->id)) return true;
+            return false;
+        }
+
+        function _user_2_user_create($set_id,$from,$to){
+            $data=array(
+             'set_id' => $set_id,
+               'from'=>$from,
+                'to'=>$to,
+                'comments'=>0,
+                'likes'=>0
+          );
+
+          $this->db->insert('user_2_user', $data);
+        }
+
+
 
          function _user_saved($set_id,$user){
             $query = $this->db->get_where('user', 

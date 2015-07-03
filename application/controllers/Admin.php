@@ -37,9 +37,55 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/dash');
 	}
 
-	public function users()
+	public function timeline($set_id=0)
 	{
-		
+		$options=array();
+
+		if($set_id==0){
+			$options['sets']=$this->instagram_model->set_get_all();
+			
+		}
+$options['set_id']=$set_id;
+
+		$this->load->view('admin/timeline',$options);
+	}
+
+
+	public function map($set_id=0)
+	{
+			$options=array();
+
+		if($set_id==0){
+			$options['sets']=$this->instagram_model->set_get_all();
+			
+		}
+		$options['set_id']=$set_id;
+
+		$this->load->view('admin/map',$options);
+	}
+
+	public function export($set_id=0)
+	{
+			$options=array();
+
+		if($set_id==0){
+			$options['sets']=$this->instagram_model->set_get_all();
+			
+		}
+		$options['set_id']=$set_id;
+
+		$this->load->view('admin/export',$options);
+	}
+
+
+	public function users($set_id=0)
+	{
+	
+
+		$options=array();
+
+
+
 
 		try{
 			$crud = new grocery_CRUD();
@@ -47,21 +93,30 @@ class Admin extends CI_Controller {
 			$crud->set_theme('datatables');
 			$crud->set_table('user');
 			$crud->set_subject('Users');
+			//$crud->where('lat','2');
+			$crud->limit(5);
 			//$crud->required_fields('city');
 			//$crud->columns('city','country','phone','addressLine1','postalCode');
 
-			$output = $crud->render();
+			$options['output'] = $crud->render();
 
-			$this->_example_output($output);
+
+		if($set_id==0){
+			$options['sets']=$this->instagram_model->set_get_all();
+			
+		}
+			$options['set_id']=$set_id;
+
+
+			$this->load->view('users',$options);
+
+			
 
 		}catch(Exception $e){
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	
 	}
-		public function _example_output($output = null)
-	{
-		$this->load->view('example.php',$output);
-	}
+
 
 }

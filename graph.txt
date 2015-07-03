@@ -1,0 +1,30 @@
+
+
+gdf format
+----
+http://gephi.github.io/users/supported-graph-formats/gdf-format/
+
+nodedef>name VARCHAR,label VARCHAR
+s1,Site number 1
+s2,Site number 2
+s3,Site number 3
+edgedef>node1 VARCHAR,node2 VARCHAR
+s1,s2,pes (opcional)
+s2,s3
+s3,s2
+s3,s1
+
+
+process
+----
+when saving user
+save all of its follows
+	user_follow
+		user set_id follow
+
+for each user
+	for every follow
+		if(follow exist in set)
+			add to graph
+				user_2_user
+					user follow set_id

@@ -33,6 +33,8 @@ class Cron extends CI_Controller {
 	public function parse()
 	{
 
+		print "parsing..\n";
+
 		if($this->config->item('disabled')){
 			print "disabled";
 			return;
@@ -44,12 +46,13 @@ class Cron extends CI_Controller {
 			$res=$this->Backoffice_model->get_status();
 			if($res->status=="busy"){
 				//wait until next call
-				print "busy";
+				print "busy!\n";
 				return;
 
 			}
 			$res=$this->Backoffice_model->get_current_set_and_tag();
 			
+			print_r($res);
 			$this->Backoffice_model->set_status("busy",$res->set_id,$res->tag);
 
 			$this->parse_tag($res->set_id,$res->tag);
@@ -58,6 +61,23 @@ class Cron extends CI_Controller {
 
 
 	}
+
+	//caution! deletes all
+	public function delete($set_id)
+	{
+		
+
+		
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('user');
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('photo');
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('user_2_user');
+
+
+	}
+
 
 	public function parse_tag($set_id,$tag){
 		$c=0;
