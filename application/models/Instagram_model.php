@@ -109,10 +109,15 @@ class Instagram_model extends CI_Model {
          
 
               foreach($data->data as $photo){
+
+              
+
                 if(!$this->_photo_saved($photo,$id)){
                   $count++;
                   $this->_photo_save($photo,$id); 
                 }
+
+                 
                // print_r($photo);
                 //for each comment
                 //todo get all comments, calling api
@@ -324,7 +329,9 @@ class Instagram_model extends CI_Model {
               $this->_user_increment($id,$photo->user->username,'photos');
             }
 
-           
+            foreach($photo->tags as $tag){
+              $this->_user_tag($id,$photo->user,$tag);
+            }
 
             $caption="";
             if(isset($photo->caption->text)){
@@ -357,6 +364,48 @@ class Instagram_model extends CI_Model {
 
           $this->db->insert('photo', $data);
           return $data;
+        }
+
+        function _user_tag($set_id,$user,$tag){
+            if(!$this->user_tag_exists($set_id,$user,$tag)){
+              $this->_user_tag_create($set_id,$user,$tag);
+            }else{
+              $this->_user_tag_increment($set_id,$user,$tag);
+            }
+        }
+
+        function _user_tag_create($set_id,$user,$tag){
+            $data=array(
+             'set_id' => $set_id,
+               'username'=>$user->username,
+                'tag'=>$tag,
+                'total'=>1
+          );
+
+          $this->db->insert('user_2_tag', $data);
+        }
+
+
+        function user_tag_exists($set_id,$user,$tag){
+            $query = $this->db->get_where('user_2_tag', 
+              array(
+                'set_id' => $set_id,
+                'username'=>$user->username,
+                'tag'=>$tag,
+                ));
+            $res=$query->row();
+            if(isset($res->id)) return true;
+            return false;
+        }
+
+
+        function _user_tag_increment($set_id,$user,$tag){
+            $this->db->where('username', $username);
+             $this->db->where('set_id', $set_id);
+             $this->db->where('tag', $tag);
+
+            $this->db->set('total', 'total+1', FALSE);
+            $this->db->update('user_2_tag');
         }
 
         function _user_2_user_update($set_id,$from,$to,$comments=0,$likes=0){
@@ -419,16 +468,35 @@ class Instagram_model extends CI_Model {
             $full_name=$user->full_name;
 
           }
-          $data = array(
+       
+
+          //look for followers
+          $user_data=$this->instagram->getUser($user->id);
+          if($user_data->meta->code=="400"){
+            $follows=-1;
+            $followers=-1; //private
+          }else{ 
+          
+          
+          $follows=$user_data->data->counts->follows;
+           $followers=$user_data->data->counts->followed_by;
+          }
+
+             $data = array(
                  'set_id'=>$set_id,
                   'username' => $user->username,
                   'profile_picture' =>  $user->profile_picture,
                   'user_id' =>  $user->id,
                   'full_name' =>  $full_name,
-                  'photos'=>$photos
-          );
+                  'photos'=>$photos,
+                  'follows'=>$follows,
+                  'followers'=>$followers
+                  );
+
 
           $this->db->insert('user', $data);
+
+
 
         }
 
@@ -439,8 +507,20 @@ class Instagram_model extends CI_Model {
             $this->db->update('user');
          }
 
+      
+         function export_time_days($set_id){
+            $sql="select count(*) as t,from_unixtime(created_time, '%Y-%m-%d') as d from photo where set_id=".$set_id." group by from_unixtime(created_time, '%Y%m%d')";
+          
+            $query=$this->db->query($sql);
+            return $query->result_array();
+
+      }
+
 
          function test(){
+            /*$res=$this->export_time_days(10);
+            print_r($res);
+            return;*/
             $this->get_tags_media_recent_ex(10,"parrot");
 
          }

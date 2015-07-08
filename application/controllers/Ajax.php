@@ -83,4 +83,9 @@ class Ajax extends CI_Controller {
 	
 		print json_encode($res);
 	}
+
+	public function timeline($set_id){
+		$res=$this->instagram_model->export_time_days($set_id);
+		print json_encode($res);
+	}
 }
