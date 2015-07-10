@@ -22,6 +22,50 @@ class Backoffice_model extends CI_Model {
                 // Call the CI_Model constructor
                 parent::__construct();
         }
+  
+
+      
+
+         public function lock($set_id=0,$tag='')
+        {
+                $hash=uniqid();
+
+                $data = array(
+                        'set_id' => $set_id,
+                        'tag' => $tag,
+                        'status' => 'busy',
+                        'started'=> time(),
+                        'hash'=>$hash
+                );
+                $this->db->insert('status', $data);
+                return $hash;
+
+        }
+
+        public function lockFree($hash)
+        {
+          $this->db->delete('status', array('hash' => $hash));
+        }
+
+         public function lockFreeAll()
+        {
+          $this->db->delete('status');
+        }
+
+        public function isLocked()
+        { 
+
+          $query = $this->db->get_where('status', 
+              array(
+                'status' => 'busy',
+
+                ));
+            $res=$query->row();
+            if(isset($res->id)) return true;
+            return false;
+        }
+
+
 
         public function set_status($status,$set_id=0,$tag='')
         {
@@ -35,6 +79,9 @@ class Backoffice_model extends CI_Model {
 
         }
 
+       
+        
+
         public function get_status()
         { 
             
@@ -45,7 +92,7 @@ class Backoffice_model extends CI_Model {
                 $res= $query->row();  
                 if(!isset($res)){
                     $this->set_status('free',0,'');
-                    return get_status();
+                    return $this->get_status();
                 }
                 return $res;
                 

@@ -61,7 +61,7 @@ class Instagram_model extends CI_Model {
               foreach($data->data as $photo){
                 if(!$this->_photo_saved($photo,$id)){
                   $count++;
-                  $d=$this->_photo_save($photo,$id);
+                  $d=$this->_photo_save($photo,$id,$tag);
 
                   $dat[]=array(
                     'u'=>$photo->images->low_resolution->url,
@@ -114,7 +114,7 @@ class Instagram_model extends CI_Model {
 
                 if(!$this->_photo_saved($photo,$id)){
                   $count++;
-                  $this->_photo_save($photo,$id); 
+                  $this->_photo_save($photo,$id,$tag); 
                 }
 
                  
@@ -320,7 +320,7 @@ class Instagram_model extends CI_Model {
             return false;
         }
 
-        function _photo_save($photo,$id){
+        function _photo_save($photo,$id,$tag){
 
            if(!$this->_user_saved($id,$photo->user)){
                   $this->_user_save($id,$photo->user,1);
@@ -351,7 +351,8 @@ class Instagram_model extends CI_Model {
                 'created_time' => $created_time,
                 'lat'=>0,
                 'lng'=>0,
-                'set_id'=>$id   
+                'set_id'=>$id,
+                'tag'=>$tag
 
           );
 
@@ -400,7 +401,7 @@ class Instagram_model extends CI_Model {
 
 
         function _user_tag_increment($set_id,$user,$tag){
-            $this->db->where('username', $username);
+            $this->db->where('username', $user->username);
              $this->db->where('set_id', $set_id);
              $this->db->where('tag', $tag);
 
@@ -445,6 +446,24 @@ class Instagram_model extends CI_Model {
 
           $this->db->insert('user_2_user', $data);
         }
+
+        function stats_get($set_id){
+            $res=array();
+            $query=$this->db->query('select count(*) as total from photo where set_id='.$set_id, FALSE);
+           $res['photos']= $query->row()->total;
+
+           $query=$this->db->query('select count(*) as total from user where set_id='.$set_id, FALSE);
+           $res['users']= $query->row()->total;
+
+           $query=$this->db->query('select count(*) as total from user_2_tag where set_id='.$set_id, FALSE);
+           $res['user_2_tag']= $query->row()->total;
+
+           $query=$this->db->query('select count(*) as total from user_2_user where set_id='.$set_id, FALSE);
+           $res['user_2_user']= $query->row()->total;
+         return $res;
+
+        }
+
 
 
 
@@ -507,7 +526,9 @@ class Instagram_model extends CI_Model {
             $this->db->update('user');
          }
 
-      
+      /*
+      select count(*),from_unixtime(created_time, '%H') from photo where set_id=2 group by from_unixtime(created_time, '%H')
+      */
          function export_time_days($set_id){
             $sql="select count(*) as t,from_unixtime(created_time, '%Y-%m-%d') as d from photo where set_id=".$set_id." group by from_unixtime(created_time, '%Y%m%d')";
           
@@ -521,7 +542,8 @@ class Instagram_model extends CI_Model {
             /*$res=$this->export_time_days(10);
             print_r($res);
             return;*/
-            $this->get_tags_media_recent_ex(10,"parrot");
+            //$this->get_tags_media_recent_ex(10,"parrot");
+            $this->stats_get(21);
 
          }
    

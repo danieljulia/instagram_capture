@@ -79,11 +79,33 @@ class Ajax extends CI_Controller {
 	public function dash(){
 		$res=$this->Backoffice_model->get_status();
 		
+
+		
+		$d=time()-strtotime($res->updated);
+		$res->d=$d;
+		if( $res->set_id==0){
+			$status="stopped";
+		}else{
+			$status="running";
+		}
+		$res->status=$status;
+
+		if(isset($res->set_id)){
+		
+			$res->stats=$this->instagram_model->stats_get($res->set_id);
+		}
+
 		$res->photos=$this->instagram_model->get_last_photos(10);
-	
+
+
 		print json_encode($res);
 	}
 
+	public function do_parse($set_id){
+		
+		$res=exec('php index.php cron parse '.$set_id.' > /dev/null 2>/dev/null &');
+		print json_encode($res);
+	}
 	public function timeline($set_id){
 		$res=$this->instagram_model->export_time_days($set_id);
 		print json_encode($res);

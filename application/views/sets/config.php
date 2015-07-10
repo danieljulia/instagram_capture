@@ -11,6 +11,11 @@ $this->load->view('header');
 
 
 </div>
+<div id="content" class="row">
+<a id="parse" href="#" class="btn btn-primary" >Parse</a>
+<a href="#" id="del" class="btn btn-warning" >Delete set and all related data</a>
+<div class="show-info"></div>
+</div>
 
 <div id="content" class="row">
 
@@ -29,7 +34,7 @@ echo form_open('email/send', '', $hidden);
 ?>
 
 <div class="col-md-4">
-<h2>Hashtag finder</h2>
+<h2>Hashtags</h2>
 
 
 
@@ -73,9 +78,13 @@ echo form_open('email/send', '', $hidden);
 
 var tags=new Array();
 
+
+  
+
+
 $(document).ready(function(){
   tag_current();
-
+  setInterval("update()",1000);
 });
 
 $('#search').on("click",function(e){
@@ -190,6 +199,37 @@ function tag_increment(tag){
   return false;
 }
 
+//delete button
+$('#del').on("click", function(e){
+  if(confirm("Are you sure you want to delete this set and all related data?")){
+    
+    window.location = "<?php print site_url("cron/delete/".$id)?>";
+  }
+});
+
+//delete button
+$('#parse').on("click", function(e){
+  var uri="<?php print site_url("ajax/do_parse/".$id)?>";
+
+$.getJSON(uri,function(data){
+    console.log(data);
+ });
+e.preventDefault();
+  
+});
+
+function update(){
+   $.getJSON("<?php print site_url("ajax/dash")?>",function(data){
+      //console.log(data);
+      
+      if(data.status!="stopped"){
+        var html="parsing...";
+        html=nano("parsing  set_id:{set_id} tag:{tag} photos:{stats.photos} users:{stats.users} user_2_tag:{stats.user_2_tag} user_2_user:{stats.user_2_user}",data);
+        $('.show-info').html(html);
+      }
+
+   });
+}
 </script>
 
 <?php 

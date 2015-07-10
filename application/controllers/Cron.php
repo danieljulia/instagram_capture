@@ -32,8 +32,16 @@ class Cron extends CI_Controller {
 
 	public function parse($set_id=0)
 	{
+		set_time_limit (0);
+		//$lock_id=$this->Backoffice_model->lock(10,"pepito");
+		//$this->Backoffice_model->lockFree();
+		//print "trying to parse..\n";
+		if($this->Backoffice_model->isLocked() ){
+			print "is locked";
+			return;
 
-		print "trying to parse..\n";
+		}
+	
 
 		if($this->config->item('disabled')){
 			print "disabled";
@@ -49,9 +57,11 @@ class Cron extends CI_Controller {
 		
 		foreach($tags as $tag){
 			print "parsing ".$tag."..\n";
-			$this->Backoffice_model->set_status("busy",$set_id,$tag);
+			$lock_id=$this->Backoffice_model->lock($set_id,$tag);
 			$this->parse_tag($set_id,$tag);
+			$this->Backoffice_model->lockFree($lock_id);
 		}
+
 		/*
 		//todo if very recent don't reparse
 		$intents=$this->config->item('cron_intents');
@@ -89,7 +99,13 @@ class Cron extends CI_Controller {
 		$this->db->delete('photo');
 		$this->db->where('set_id',$set_id);
 		$this->db->delete('user_2_user');
-
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('user_2_tag');
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('set_2_tag');
+		$this->db->where('id',$set_id);
+		$this->db->delete('set');
+		redirect("sets");
 
 	}
 
@@ -141,6 +157,14 @@ class Cron extends CI_Controller {
 	public function test(){
 		//$this->instagram_model->set_updated(10,'parrot');
 		$this->instagram_model->test();
+		return;
+		$locked=$this->Backoffice_model->isLocked();
+		print "locked: ".$locked;
+		if($locked){
+			print "is locked";
+		}else{
+			print "is free";
+		}
 
 	}
 }

@@ -1,9 +1,10 @@
 v 0.3
 ----
 
-- add followers, following and all possible information to capture
++ add followers, following and all possible information to capture
 maybe hashtags
-- delete sets
+	ok
+- parse and delete sets from config, semaphore for parsing
 - parsing from web site and stop (only one active)
 - users shows ranking
 - correct gdf files, add fields
