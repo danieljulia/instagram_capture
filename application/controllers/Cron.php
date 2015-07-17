@@ -32,16 +32,18 @@ class Cron extends CI_Controller {
 
 	public function parse($set_id=0)
 	{
-		set_time_limit (0);
+		set_time_limit (0); //just in case
 		//$lock_id=$this->Backoffice_model->lock(10,"pepito");
 		//$this->Backoffice_model->lockFree();
 		//print "trying to parse..\n";
+
+		/*
 		if($this->Backoffice_model->isLocked() ){
 			print "is locked";
 			return;
 
 		}
-	
+	*/
 
 		if($this->config->item('disabled')){
 			print "disabled";
@@ -59,7 +61,7 @@ class Cron extends CI_Controller {
 			print "parsing ".$tag."..\n";
 			$lock_id=$this->Backoffice_model->lock($set_id,$tag);
 			$this->parse_tag($set_id,$tag);
-			$this->Backoffice_model->lockFree($lock_id);
+			//$this->Backoffice_model->lockFree($lock_id);
 		}
 
 		/*
@@ -93,14 +95,7 @@ class Cron extends CI_Controller {
 		
 
 		
-		$this->db->where('set_id',$set_id);
-		$this->db->delete('user');
-		$this->db->where('set_id',$set_id);
-		$this->db->delete('photo');
-		$this->db->where('set_id',$set_id);
-		$this->db->delete('user_2_user');
-		$this->db->where('set_id',$set_id);
-		$this->db->delete('user_2_tag');
+		$this->delete_data($set_id,false);
 		$this->db->where('set_id',$set_id);
 		$this->db->delete('set_2_tag');
 		$this->db->where('id',$set_id);
@@ -109,6 +104,24 @@ class Cron extends CI_Controller {
 
 	}
 
+	public function delete_data($set_id,$redirect=true)
+	{
+		
+
+		
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('user');
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('photo');
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('user_2_user');
+		$this->db->where('set_id',$set_id);
+		$this->db->delete('user_2_tag');
+		if($redirect)
+			redirect("sets/config/".$set_id);
+		//redirect("sets");
+
+	}
 
 	public function parse_tag($set_id,$tag){
 		$c=0;
@@ -118,16 +131,23 @@ class Cron extends CI_Controller {
 
 			$next=$this->instagram_model->get_tags_media_recent_ex($set_id,$tag,$next);
 			print "parsing...";
+			$status=$this->Backoffice_model->get_status();
+			if($status->set_id!=$set_id && $status->tag!=$tag){
+				print "\nquiting, another process running for ".$set_id;
+				$next=''; //quit
+			}
+
 			$c++;
 			if($c>$this->config->item('instagram_max_calls')){
+				print "quiting after max calls (config)";
 				$next=''; //quit
 			}
 		}
 		$this->instagram_model->set_updated($set_id,$tag);
 
-		$this->Backoffice_model->set_status('free');
+		//$this->Backoffice_model->set_status('free');
 	}
-
+/*
 	public function __parse($id)
 	{
 
@@ -152,9 +172,11 @@ class Cron extends CI_Controller {
 		
 
 		//$this->load->view('welcome_message');
-	}
+	}*/
 
 	public function test(){
+		$this->Backoffice_model->test();
+		return;
 		//$this->instagram_model->set_updated(10,'parrot');
 		$this->instagram_model->test();
 		return;

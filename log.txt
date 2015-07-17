@@ -1,0 +1,3666 @@
+parsing badalona..
+
+rate limit  4999set id: 4 tag: badalona parsed 33 photos, 32 users
+
+rate limit  4832set id: 4 tag: badalona parsed 33 photos, 61 users
+parsing...
+rate limit  4672set id: 4 tag: badalona parsed 33 photos, 86 users
+parsing...
+rate limit  4523set id: 4 tag: badalona parsed 33 photos, 113 users
+parsing...
+rate limit  4366set id: 4 tag: badalona parsed 33 photos, 140 users
+parsing...
+rate limit  4225set id: 4 tag: badalona parsed 33 photos, 166 users
+parsing...
+rate limit  4067set id: 4 tag: badalona parsed 33 photos, 189 users
+parsing...
+rate limit  3924set id: 4 tag: badalona parsed 33 photos, 214 users
+parsing...
+rate limit  3774set id: 4 tag: badalona parsed 33 photos, 237 users
+parsing...
+rate limit  3623set id: 4 tag: badalona parsed 33 photos, 263 users
+parsing...
+rate limit  3471set id: 4 tag: badalona parsed 33 photos, 277 users
+parsing...
+rate limit  3373set id: 4 tag: badalona parsed 33 photos, 300 users
+parsing...
+rate limit  3213set id: 4 tag: badalona parsed 33 photos, 312 users
+parsing...
+rate limit  3078set id: 4 tag: badalona parsed 33 photos, 333 users
+parsing...
+rate limit  2915set id: 4 tag: badalona parsed 33 photos, 356 users
+parsing...
+rate limit  2752set id: 4 tag: badalona parsed 33 photos, 373 users
+parsing...
+rate limit  2611set id: 4 tag: badalona parsed 33 photos, 392 users
+parsing...
+rate limit  2438set id: 4 tag: badalona parsed 33 photos, 412 users
+parsing...
+rate limit  2296set id: 4 tag: badalona parsed 33 photos, 431 users
+parsing...
+rate limit  2158set id: 4 tag: badalona parsed 33 photos, 448 users
+parsing...
+rate limit  2026set id: 4 tag: badalona parsed 33 photos, 461 users
+parsing...
+rate limit  1900set id: 4 tag: badalona parsed 33 photos, 479 users
+parsing...
+rate limit  1768set id: 4 tag: badalona parsed 33 photos, 494 users
+parsing...
+rate limit  1627set id: 4 tag: badalona parsed 33 photos, 513 users
+parsing...
+rate limit  1484set id: 4 tag: badalona parsed 33 photos, 526 users
+parsing...
+rate limit  1357set id: 4 tag: badalona parsed 33 photos, 542 users
+parsing...
+rate limit  1220set id: 4 tag: badalona parsed 33 photos, 557 users
+parsing...
+rate limit  1075set id: 4 tag: badalona parsed 33 photos, 571 users
+parsing...
+rate limit  960set id: 4 tag: badalona parsed 33 photos, 587 users
+parsing...
+rate limit  828set id: 4 tag: badalona parsed 33 photos, 605 users
+parsing...
+rate limit  696set id: 4 tag: badalona parsed 33 photos, 622 users
+parsing...
+rate limit  569set id: 4 tag: badalona parsed 33 photos, 641 users
+parsing...
+rate limit  417set id: 4 tag: badalona parsed 33 photos, 656 users
+parsing...
+rate limit  279set id: 4 tag: badalona parsed 33 photos, 670 users
+parsing...
+rate limit  168set id: 4 tag: badalona parsed 33 photos, 679 users
+parsing...
+rate limit  67
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 153	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined property: stdClass::$metaFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 171	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	set id: 4 tag: badalona parsed 33 photos, 692 users
+parsing...
+A PHP Error was encountered
+
+Severity: WarningMessage:  file_get_contents(https://api.instagram.com/v1/tags/badalona/media/recent?count=33&client_id=128d96b790704f5db73b5a3dc706831a&max_tag_id=1021895586335560460): failed to open stream: HTTP request failed! HTTP/1.1 429 UNKNOWN STATUS CODE
+Filename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 99
+
+Backtrace:
+			
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 99	Function: file_get_contents
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 114
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 114	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+rate limit rate limit  sleeping for 5 min....
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 129
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 129	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 129
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 129	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 137
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 137	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: WarningMessage:  Invalid argument supplied for foreach()Filename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 137
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 137	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	I already have this photos...parsing...parsing anisdelmono..
+
+rate limit  212set id: 4 tag: anisdelmono parsed 11 photos, 701 users
+
+rate limit  161set id: 4 tag: anisdelmono parsed 32 photos, 721 users
+parsing...
+rate limit  30set id: 4 tag: anisdelmono parsed 33 photos, 742 users
+parsing...
+rate limit  410set id: 4 tag: anisdelmono parsed 33 photos, 767 users
+max hours back!
+parsing...

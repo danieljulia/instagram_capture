@@ -23,8 +23,7 @@ class Instagram_model extends CI_Model {
 
         var $count_users=0;
         var $set_id;
-
-
+        private $_xRateLimitRemaining;
 
         public function __construct()
         {
@@ -32,20 +31,31 @@ class Instagram_model extends CI_Model {
                 parent::__construct();
         }
 
+        public function getRateLimit(){
+          return intval($this->_xRateLimitRemaining);
+        }
+
+        /*
         public function get_tags_media_recent($id,$tag="",$url="")
         {
               if($tag=="") return;
               $uri="https://api.instagram.com/v1/tags/".$tag."/media/recent?count=33&client_id=".$this->config->item('instagram_key');
               if($url!="") $uri=$url;
               $res=file_get_contents($uri);
-              $headers=$http_response_header;
-              /*
-                X-Ratelimit-Remaining: the remaining number of calls available to your app within the 1-hour window
+              $headerContent=$http_response_header;
+          
 
-              X-Ratelimit-Limit: the total number of calls allowed within the 1-hour window
-              */
+              $headers=$this->processHeaders($headerContent);
 
+              $this->_xRateLimitRemaining = $headers['X-Ratelimit-Remaining'];
             
+              print "rate li9mit ".$this->getRateLimit();
+              exit();
+
+              if($this->getRateLimit()<20){
+                print "rate limit ".$this->getRateLimit()." sleeping for 5 min....";
+                sleep(60*5); //sleep 5min
+              }
 
               $data = json_decode( $res ); // stdClass object
 
@@ -78,7 +88,8 @@ class Instagram_model extends CI_Model {
               print json_encode($res);
               
 
-        }
+        }*/
+
 
         public function get_tags_media_recent_ex($id,$tag="",$url="")
         {
@@ -86,7 +97,9 @@ class Instagram_model extends CI_Model {
               $uri="https://api.instagram.com/v1/tags/".$tag."/media/recent?count=33&client_id=".$this->config->item('apiKey');
               if($url!="") $uri=$url;
               $res=file_get_contents($uri);
-              $headers=$http_response_header;
+
+                $headerContent=$http_response_header;
+       
 
               //todo extract and save limit
               /*
@@ -95,7 +108,20 @@ class Instagram_model extends CI_Model {
               X-Ratelimit-Limit: the total number of calls allowed within the 1-hour window
               */
 
+                $headers=$this->processHeaders($headerContent);
+               
+               
+              $this->_xRateLimitRemaining = $headers['X-Ratelimit-Remaining'];
             
+            
+              print "\nrate limit ".$this->getRateLimit();
+
+
+              if($this->getRateLimit()<1000){
+                print "rate limit ".$this->getRateLimit()." sleeping for 5 min....";
+                sleep(60*5); //sleep 5min
+              }
+
 
               $data = json_decode( $res ); // stdClass object
 
@@ -329,9 +355,12 @@ class Instagram_model extends CI_Model {
               $this->_user_increment($id,$photo->user->username,'photos');
             }
 
-            foreach($photo->tags as $tag){
-              $this->_user_tag($id,$photo->user,$tag);
+
+            
+              foreach($photo->tags as $tag2){
+              $this->_user_tag($id,$photo->user,$tag2);
             }
+
 
             $caption="";
             if(isset($photo->caption->text)){
@@ -382,8 +411,11 @@ class Instagram_model extends CI_Model {
                 'tag'=>$tag,
                 'total'=>1
           );
+            try{ 
+              $this->db->insert('user_2_tag', $data);
+            }catch(Exception $e){
 
-          $this->db->insert('user_2_tag', $data);
+          } 
         }
 
 
@@ -406,7 +438,12 @@ class Instagram_model extends CI_Model {
              $this->db->where('tag', $tag);
 
             $this->db->set('total', 'total+1', FALSE);
+            try{ 
             $this->db->update('user_2_tag');
+             }catch(Exception $e){
+
+             }
+             
         }
 
         function _user_2_user_update($set_id,$from,$to,$comments=0,$likes=0){
@@ -490,17 +527,41 @@ class Instagram_model extends CI_Model {
        
 
           //look for followers
+
+          try{ 
           $user_data=$this->instagram->getUser($user->id);
+        }catch(Exception $e){
+          print "exception inserting getUser";
+          return;
+        }
+
+     
+
+
+           $follows=0;
+           $followers=0;
+
           if($user_data->meta->code=="400"){
             $follows=-1;
             $followers=-1; //private
           }else{ 
           
-          
-          $follows=$user_data->data->counts->follows;
-           $followers=$user_data->data->counts->followed_by;
+            if(isset($user_data->data)){
+              if(isset($user_data->data->counts)){
+                 $follows=$user_data->data->counts->follows;
+                  $followers=$user_data->data->counts->followed_by;
+              }
+
+            }
+           
           }
 
+          if(is_null($follows))
+            $follows=0;
+          if(is_null($followers))
+           $followers=0;
+
+          try{ 
              $data = array(
                  'set_id'=>$set_id,
                   'username' => $user->username,
@@ -514,7 +575,9 @@ class Instagram_model extends CI_Model {
 
 
           $this->db->insert('user', $data);
-
+        }catch(Exception $e){
+          print "exception inserting user";
+        }
 
 
         }
@@ -536,6 +599,26 @@ class Instagram_model extends CI_Model {
             return $query->result_array();
 
       }
+
+    private function processHeaders($headerContent)
+    {
+        $headers = array();
+
+    
+        foreach ( $headerContent as $i=>$line) {
+       
+            if ($i === 0) {
+                $headers['http_code'] = $line;
+                continue;
+            }
+
+            list($key, $value) = explode(':', $line);
+            $headers[$key] = $value;
+          
+        }
+
+        return $headers;
+    }
 
 
          function test(){

@@ -1,0 +1,237 @@
+parsing catalunya..
+
+rate limit  1263set id: 5 tag: catalunya parsed 33 photos, 31 users
+
+rate limit  1160set id: 5 tag: catalunya parsed 33 photos, 60 users
+parsing...
+rate limit  1025set id: 5 tag: catalunya parsed 33 photos, 88 users
+parsing...
+rate limit  1394set id: 5 tag: catalunya parsed 33 photos, 114 users
+parsing...
+rate limit  1269set id: 5 tag: catalunya parsed 33 photos, 142 users
+parsing...
+rate limit  1149set id: 5 tag: catalunya parsed 33 photos, 171 users
+parsing...
+rate limit  1499set id: 5 tag: catalunya parsed 33 photos, 200 users
+parsing...
+rate limit  1369set id: 5 tag: catalunya parsed 33 photos, 221 users
+parsing...
+rate limit  1249set id: 5 tag: catalunya parsed 33 photos, 245 users
+parsing...
+rate limit  1137set id: 5 tag: catalunya parsed 33 photos, 269 users
+parsing...
+rate limit  1449set id: 5 tag: catalunya parsed 33 photos, 288 users
+parsing...
+rate limit  1341set id: 5 tag: catalunya parsed 33 photos, 308 users
+parsing...
+rate limit  1242set id: 5 tag: catalunya parsed 33 photos, 337 users
+parsing...
+rate limit  1480set id: 5 tag: catalunya parsed 33 photos, 367 users
+parsing...
+rate limit  1329set id: 5 tag: catalunya parsed 33 photos, 394 users
+parsing...
+rate limit  1179set id: 5 tag: catalunya parsed 33 photos, 420 users
+parsing...
+rate limit  1399set id: 5 tag: catalunya parsed 33 photos, 444 users
+parsing...
+rate limit  1260set id: 5 tag: catalunya parsed 33 photos, 470 users
+parsing...
+rate limit  1106set id: 5 tag: catalunya parsed 33 photos, 493 users
+parsing...
+rate limit  990set id: 5 tag: catalunya parsed 33 photos, 520 users
+parsing...
+rate limit  1267set id: 5 tag: catalunya parsed 33 photos, 539 users
+parsing...
+rate limit  1162set id: 5 tag: catalunya parsed 33 photos, 557 users
+parsing...
+rate limit  1043set id: 5 tag: catalunya parsed 33 photos, 573 users
+parsing...
+rate limit  1405set id: 5 tag: catalunya parsed 33 photos, 594 users
+parsing...
+rate limit  1263set id: 5 tag: catalunya parsed 33 photos, 618 users
+parsing...
+rate limit  1126set id: 5 tag: catalunya parsed 33 photos, 642 users
+parsing...
+rate limit  1188set id: 5 tag: catalunya parsed 33 photos, 661 users
+parsing...
+rate limit  1060set id: 5 tag: catalunya parsed 33 photos, 684 users
+parsing...
+rate limit  937set id: 5 tag: catalunya parsed 33 photos, 707 users
+parsing...
+rate limit  1072set id: 5 tag: catalunya parsed 33 photos, 736 users
+parsing...
+rate limit  932set id: 5 tag: catalunya parsed 33 photos, 761 users
+parsing...
+rate limit  809set id: 5 tag: catalunya parsed 33 photos, 786 users
+parsing...
+rate limit  982set id: 5 tag: catalunya parsed 33 photos, 814 users
+parsing...
+rate limit  845set id: 5 tag: catalunya parsed 33 photos, 840 users
+parsing...
+rate limit  691set id: 5 tag: catalunya parsed 33 photos, 859 users
+parsing...
+rate limit  572set id: 5 tag: catalunya parsed 33 photos, 880 users
+parsing...
+rate limit  446rate limit  446 sleeping for 5 min....set id: 5 tag: catalunya parsed 33 photos, 904 users
+parsing...
+rate limit  589set id: 5 tag: catalunya parsed 33 photos, 929 users
+parsing...
+rate limit  880set id: 5 tag: catalunya parsed 33 photos, 952 users
+parsing...
+rate limit  746set id: 5 tag: catalunya parsed 33 photos, 976 users
+parsing...
+rate limit  1015
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Undefined index: X-Ratelimit-RemainingFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.phpLine Number: 633
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 633	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/libraries/Instagram.php	Line: 169	Function: _makeCall
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 532	Function: getUser
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	
+A PHP Error was encountered
+
+Severity: NoticeMessage:  Trying to get property of non-objectFilename: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.phpLine Number: 544
+
+Backtrace:
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 544	Function: _error_handler
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 352	Function: _user_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/models/Instagram_model.php	Line: 143	Function: _photo_save
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 130	Function: get_tags_media_recent_ex
+		
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/application/controllers/Cron.php	Line: 61	Function: parse_tag
+		
+			
+			
+			
+	File: /var/www/projects/2015_a/11_instagram_tool/www/index.php	Line: 292	Function: require_once
+		
+	set id: 5 tag: catalunya parsed 33 photos, 1000 users
+parsing...
+rate limit  886set id: 5 tag: catalunya parsed 33 photos, 1025 users
+parsing...
+rate limit  743set id: 5 tag: catalunya parsed 33 photos, 1050 users
+parsing...
+rate limit  1027set id: 5 tag: catalunya parsed 33 photos, 1075 users
+parsing...
+rate limit  887set id: 5 tag: catalunya parsed 33 photos, 1098 users
+parsing...
+rate limit  754set id: 5 tag: catalunya parsed 33 photos, 1119 users
+parsing...
+rate limit  1070set id: 5 tag: catalunya parsed 33 photos, 1145 users
+parsing...
+rate limit  921set id: 5 tag: catalunya parsed 33 photos, 1171 users
+parsing...
+rate limit  1186set id: 5 tag: catalunya parsed 33 photos, 1198 users
+parsing...
+rate limit  1042set id: 5 tag: catalunya parsed 33 photos, 1218 users
+parsing...
+rate limit  912set id: 5 tag: catalunya parsed 33 photos, 1238 users
+parsing...
+rate limit  1191set id: 5 tag: catalunya parsed 33 photos, 1264 users
+parsing...
+rate limit  1049set id: 5 tag: catalunya parsed 33 photos, 1287 users
+parsing...
+rate limit  894set id: 5 tag: catalunya parsed 33 photos, 1311 users
+parsing...
+rate limit  1160set id: 5 tag: catalunya parsed 33 photos, 1331 users
+parsing...
+rate limit  1034set id: 5 tag: catalunya parsed 33 photos, 1351 users
+parsing...
+rate limit  1283set id: 5 tag: catalunya parsed 33 photos, 1375 users
+parsing...
+rate limit  1130set id: 5 tag: catalunya parsed 33 photos, 1395 users
+parsing...
+rate limit  990set id: 5 tag: catalunya parsed 33 photos, 1419 users
+parsing...
+rate limit  1237set id: 5 tag: catalunya parsed 33 photos, 1436 users
+parsing...
+rate limit  1105set id: 5 tag: catalunya parsed 33 photos, 1450 users
+parsing...
+rate limit  1363set id: 5 tag: catalunya parsed 33 photos, 1474 users
+parsing...
+rate limit  1228set id: 5 tag: catalunya parsed 33 photos, 1495 users
+parsing...
+rate limit  1299set id: 5 tag: catalunya parsed 33 photos, 1520 users
+parsing...
+rate limit  1148set id: 5 tag: catalunya parsed 33 photos, 1535 users
+parsing...
+rate limit  1013set id: 5 tag: catalunya parsed 33 photos, 1555 users
+parsing...
+rate limit  1111set id: 5 tag: catalunya parsed 33 photos, 1574 users
+parsing...
+rate limit  981set id: 5 tag: catalunya parsed 33 photos, 1592 users
+parsing...
+rate limit  862set id: 5 tag: catalunya parsed 33 photos, 1609 users
+parsing...
+rate limit  1131set id: 5 tag: catalunya parsed 33 photos, 1624 users
+parsing...
+rate limit  1021set id: 5 tag: catalunya parsed 33 photos, 1648 users
+parsing...
+rate limit  1253set id: 5 tag: catalunya parsed 33 photos, 1672 users
+parsing...
+rate limit  1107

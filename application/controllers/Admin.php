@@ -55,11 +55,16 @@ $options['set_id']=$set_id;
 	{
 			$options=array();
 
-		if($set_id==0){
+		//if($set_id==0){
 			$options['sets']=$this->instagram_model->set_get_all();
 			
-		}
+		//}
 		$options['set_id']=$set_id;
+
+		$options['output']->css_files[]="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css";
+		$options['output']->js_files[]="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js";
+		$options['output']->js_files[]=site_url('')."assets/js/leaflet-heat.js";
+
 
 		$this->load->view('admin/map',$options);
 	}
@@ -90,21 +95,27 @@ $options['set_id']=$set_id;
 		try{
 			$crud = new grocery_CRUD();
 
-			$crud->set_theme('datatables');
+			$crud->set_theme('flexigrid'); //datatables? is client
+			$crud->unset_add();
+			$crud->unset_edit();
+
 			$crud->set_table('user');
 			$crud->set_subject('Users');
 			//$crud->where('lat','2');
-			$crud->limit(5);
+			//$crud->limit(5);
 			//$crud->required_fields('city');
 			//$crud->columns('city','country','phone','addressLine1','postalCode');
-
+			if($set_id!=0) $crud->where('set_id',$set_id);
 			$options['output'] = $crud->render();
 
 
-		if($set_id==0){
+			if($set_id==0){
+				
+				
+			}else{
+				
+			}
 			$options['sets']=$this->instagram_model->set_get_all();
-			
-		}
 			$options['set_id']=$set_id;
 
 

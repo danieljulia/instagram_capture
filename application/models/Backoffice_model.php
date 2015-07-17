@@ -65,6 +65,7 @@ class Backoffice_model extends CI_Model {
             return false;
         }
 
+   
 
 
         public function set_status($status,$set_id=0,$tag='')
@@ -90,10 +91,11 @@ class Backoffice_model extends CI_Model {
                 $query = $this->db->get('status');
 
                 $res= $query->row();  
+                /*
                 if(!isset($res)){
                     $this->set_status('free',0,'');
                     return $this->get_status();
-                }
+                }*/
                 return $res;
                 
         }
@@ -142,6 +144,9 @@ class Backoffice_model extends CI_Model {
 
          public function test()
          {
+                $res=$this->get_status();
+                print_r($res);
+                return;
                 $this->set_status("busy",1,'parrot');
                 /*$res=$this->get_status();
                 print_r($res);

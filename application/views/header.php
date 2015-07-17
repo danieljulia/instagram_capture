@@ -13,41 +13,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css">
 
+
+
+   <link rel="stylesheet" href="<?php print site_url('')?>assets/css/style.css">
+   
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
    <script src="<?php print site_url('')?>assets/js/nano.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
 <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['corechart', 'timeline']}]}"></script>
    
-<style type="text/css">
-body
-{
-  font-family: Arial;
-  font-size: 14px;
-}
-a {
-    color: blue;
-    text-decoration: none;
-    font-size: 14px;
-}
-a:hover
-{
-  text-decoration: underline;
-}
-	#content img{
-		width:100px;
-		float:left;
-	}
 
-  img.thumb{
-    float:left;
-  }
-	</style>
 
 <?php 
+
+
+
 if(isset($output->css_files )):
 foreach($output->css_files as $file): ?>
   <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
@@ -57,6 +40,7 @@ if(isset($output->js_files )):
  foreach($output->js_files as $file): ?>
   <script src="<?php echo $file; ?>"></script>
 <?php endforeach; endif; ?>
+
 
 </head>
 <body>

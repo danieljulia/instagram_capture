@@ -28,13 +28,15 @@ s3,s2
 s3,s1
 */
 ?>
-edgedef>node1 VARCHAR,node2 VARCHAR
+edgedef>node1 VARCHAR,node2 VARCHAR,comments DOUBLE,likes DOUBLE
 <?php
 foreach($user_2_user as $u):
 	print $u['from'];
 	print ",";
 	print $u['to'];
 	print ",";
-	print $u['comments']*5+$u['likes'];
+	print $u['comments'];
+	print ",";
+	print $u['likes'];
 	print "\n";
 endforeach;

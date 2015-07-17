@@ -13,7 +13,8 @@ $this->load->view('header');
 </div>
 <div id="content" class="row">
 <a id="parse" href="#" class="btn btn-primary" >Parse</a>
-<a href="#" id="del" class="btn btn-warning" >Delete set and all related data</a>
+<a href="#" id="del_data" class="btn btn-warning" >Delete data</a>
+<a href="#" id="del" class="btn btn-warning" >Delete set and data</a>
 <div class="show-info"></div>
 </div>
 
@@ -207,7 +208,15 @@ $('#del').on("click", function(e){
   }
 });
 
-//delete button
+$('#del_data').on("click", function(e){
+  if(confirm("Are you sure you want to delete all data?")){
+    
+    window.location = "<?php print site_url("cron/delete_data/".$id)?>";
+  }
+});
+
+
+
 $('#parse').on("click", function(e){
   var uri="<?php print site_url("ajax/do_parse/".$id)?>";
 

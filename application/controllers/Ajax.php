@@ -76,6 +76,15 @@ class Ajax extends CI_Controller {
 		print json_encode($res);
 	}
 
+	public function photos($set_id){
+		
+		//$set=$this->instagram_model->set_get($set_id);
+	
+		$photos=$this->instagram_model->set_get_photos($set_id);
+		print json_encode($photos);
+
+	}
+
 	public function dash(){
 		$res=$this->Backoffice_model->get_status();
 		
