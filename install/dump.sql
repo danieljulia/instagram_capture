@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 03-07-2015 a las 10:52:48
+-- Tiempo de generación: 17-07-2015 a las 08:07:22
 -- Versión del servidor: 5.5.37
 -- Versión de PHP: 5.3.10-1ubuntu3.11
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `set_2_tag` (
   `tag` varchar(32) NOT NULL,
   `updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -87,20 +87,9 @@ CREATE TABLE IF NOT EXISTS `status` (
   `set_id` int(11) NOT NULL,
   `tag` varchar(32) NOT NULL,
   `started` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `hash` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tag`
---
-
-CREATE TABLE IF NOT EXISTS `tag` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(32) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 
 -- --------------------------------------------------------
 
@@ -120,8 +109,25 @@ CREATE TABLE IF NOT EXISTS `user` (
   `set_id` int(11) NOT NULL,
   `lat` float NOT NULL,
   `lng` float NOT NULL,
+  `followers` int(11) NOT NULL,
+  `follows` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user_2_tag`
+--
+
+CREATE TABLE IF NOT EXISTS `user_2_tag` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `tag` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `set_id` int(11) NOT NULL,
+  `total` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1  ;
 
 -- --------------------------------------------------------
 
