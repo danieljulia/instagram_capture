@@ -1,4 +1,4 @@
-# instagram_capture
+# instagram_retriever
 
 
 
@@ -18,16 +18,16 @@ How to use
 - Open the browser and create a set
 You can add several tags for each set
 
-- Then you can begin to parse a set using the button or the command line
-
+- Then you can begin to parse a set using the button or the command line (better)
 
 index.php cron parse id   
 
 where id is the set id
 
 
-- When parsing a set, the previously running sets will stop (not inmediatly but after a few minutes), this is to prevent overload in the calls
+- When parsing a set, the previously running set will stop (not inmediatly but after a few minutes), this is to prevent overload in the calls
 
+- You can export data using the export section or directly from database
 
 Agreements
 ----

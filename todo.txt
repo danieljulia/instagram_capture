@@ -4,15 +4,15 @@ v 0.3
 + add followers, following and all possible information to capture
 maybe hashtags
 	ok
-- parse and delete sets from config, semaphore for parsing
-- parsing from web site and stop (only one active)
-- users shows ranking
-- correct gdf files, add fields
++ parse and delete sets from config, semaphore for parsing
++ parsing from web site and stop (only one active)
++ users shows ranking
++ correct gdf files, add fields
 - add position to users, tags etc
-- show timelines and map (basic version)
++ show timelines and map (basic version)
 https://developers.google.com/chart/interactive/docs/datesandtimes
 https://github.com/Leaflet/Leaflet.heat
-- more info on dash (config?) , number of photos, last update (running or no)
++ more info on dash (config?) , number of photos, last update (running or no)
 
 
 v 0.2

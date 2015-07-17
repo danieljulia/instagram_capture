@@ -41,10 +41,10 @@ class Admin extends CI_Controller {
 	{
 		$options=array();
 
-		if($set_id==0){
+		//if($set_id==0){
 			$options['sets']=$this->instagram_model->set_get_all();
 			
-		}
+		//}
 $options['set_id']=$set_id;
 
 		$this->load->view('admin/timeline',$options);

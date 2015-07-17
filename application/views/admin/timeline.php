@@ -12,18 +12,19 @@ $this->load->view('header');
 </div>
 
 <div id="content" class="row">
-<?php if(isset($sets)): ?>
+
 <ul class="sets nav nav-pills nav-stacked">
 <?php
 
  foreach($sets as $set): ?>
-<li role="presentation"><a href="<?php print site_url("admin/timeline/".$set['id'])?>"><?php print $set['name']?></a></li>
+<li <?php if($set['id']==$set_id):?> class="active" <?php endif;?> role="presentation"><a href="<?php print site_url("admin/timeline/".$set['id'])?>"><?php print $set['name']?></a></li>
 <?php endforeach; ?>
 </ul>
 
+
 </div>	
 <?php
-else:
+if($set_id!=0):
 ?>
 
 

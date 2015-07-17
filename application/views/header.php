@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Instagram capturing tool</title>
+	  <title>Instagram Retriever</title>
 
 
 
@@ -57,7 +57,7 @@ if(isset($output->js_files )):
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Instagram capture</a>
+            <a class="navbar-brand" href="#">Instagram Retriever</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
